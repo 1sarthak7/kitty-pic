@@ -39,13 +39,12 @@ Designed for performance and clarity, this project demonstrates practical comput
 
 ---
 
-## Live Demo Preview
+## Kitty
 
 <p align="center">
   <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" width="500" />
 </p>
 
-The application opens a webcam window and overlays dynamic facial mesh points in real time.
 
 ---
 
