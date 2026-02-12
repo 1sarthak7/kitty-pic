@@ -84,8 +84,7 @@ Display Output Window
 ### 1. Clone Repository
 
 ```
-git clone https://github.com/1sarthak7/your-repo-name.git
-cd your-repo-name
+git clone [https://github.com/1sarthak7/kitty-pic] 
 ```
 
 ### 2. Create Virtual Environment (Recommended)
@@ -140,7 +139,7 @@ Avoid Python 3.13+ for legacy MediaPipe API compatibility.
 </p>
 
 **Sarthak Bhopale**
-* Engineering Student | Computer Vision Enthusiast
+* Engineering Student
 * GitHub: [https://github.com/1sarthak7](https://github.com/1sarthak7)
 
 ---
