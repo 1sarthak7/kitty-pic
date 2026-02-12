@@ -1,11 +1,11 @@
-# Real-Time Face Mesh Detection
+
 
 <p align="center">
   <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="220" />
 </p>
 
 <p align="center">
-  <b>High-Performance Real-Time Face Landmark Tracking using MediaPipe & OpenCV</b>
+  <b>Kitty Face Detection</b>
 </p>
 
 ---
@@ -132,38 +132,6 @@ Avoid Python 3.13+ for legacy MediaPipe API compatibility.
 
 ---
 
-## Project Structure
-
-```
-hand-web/
-│
-├── main.py
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Use Cases
-
-* Face filter applications
-* AR-based overlays
-* Emotion recognition pipelines
-* Gesture-based interaction systems
-* Research and academic demonstrations
-
----
-
-## Future Improvements
-
-* Real-time FPS display
-* Face bounding box visualization
-* Head pose estimation
-* Blink detection system
-* Facial expression classification
-* Web deployment using WebRTC
-
----
 
 ## Author
 
@@ -172,15 +140,9 @@ hand-web/
 </p>
 
 **Sarthak Bhopale**
-Engineering Student | Computer Vision Enthusiast
-GitHub: [https://github.com/1sarthak7](https://github.com/1sarthak7)
+* Engineering Student | Computer Vision Enthusiast
+* GitHub: [https://github.com/1sarthak7](https://github.com/1sarthak7)
 
 ---
 
-## License
-
-This project is intended for educational and research purposes.
-
----
-
-If you found this project useful, consider giving it a star on GitHub.
+** If you found this project useful, consider giving it a star on GitHub. **
