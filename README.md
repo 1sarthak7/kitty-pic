@@ -1,73 +1,186 @@
-<div align="center">
-
 # Real-Time Face Mesh Detection
 
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-Face%20Mesh-00A99D?style=for-the-badge&logo=google&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+<p align="center">
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="220" />
+</p>
 
-<br />
+<p align="center">
+  <b>High-Performance Real-Time Face Landmark Tracking using MediaPipe & OpenCV</b>
+</p>
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZ5Z3J5aW55Z3J5aW55Z3J5aW55Z3J5aW55Z3J5aW55Z3J5aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKSjRrfIPjeiVyM/giphy.gif" alt="Face Mesh Demo Animation" width="600">
+---
 
-<br />
+## Tech Stack
 
-**A high-performance computer vision application that maps 468 distinct facial landmarks in real-time.**
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green?style=for-the-badge&logo=opencv" />
+  <img src="https://img.shields.io/badge/MediaPipe-FaceMesh-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-purple?style=for-the-badge" />
+</p>
 
-<br />
+---
 
-[View Demo](#) · [Report Bug](#) · [Request Feature](#)
+## Project Overview
 
-</div>
+This project implements a real-time Face Mesh detection system using MediaPipe and OpenCV. The application captures live webcam input, detects facial landmarks, and overlays 468 mesh points with high accuracy and low latency.
 
-<br />
+Designed for performance and clarity, this project demonstrates practical computer vision implementation optimized for Apple Silicon and modern Python environments.
 
-<div align="center">
-
-## About The Project
-
-This project leverages the power of Google's MediaPipe framework alongside OpenCV to create a robust facial landmark detection system. Unlike traditional bounding-box face detection, this application generates a dense mesh of 468 3D data points, allowing for precise tracking of facial geometry, expressions, and orientation.
-
-The system captures live video feed from a standard webcam, processes the frames using the MediaPipe Face Mesh solution, and renders the triangulation overlay onto the video feed with low latency. This technology is foundational for applications involving augmented reality filters, avatar animation, and drowsiness detection systems.
-
-</div>
-
-<div align="center">
+---
 
 ## Key Features
 
-**High-Fidelity Tracking**
-Detects and tracks 468 3D facial landmarks with sub-millimeter precision.
+* Real-time webcam processing
+* 468 facial landmark tracking
+* Smooth frame rendering
+* Lightweight architecture
+* Apple Silicon optimized setup
+* Clean modular code structure
 
-**Cross-Platform Compatibility**
-Optimized to run smoothly on macOS (Apple Silicon), Windows, and Linux environments.
+---
 
-**Real-Time Performance**
-Utilizes efficient pipeline architecture to maintain high FPS during live video processing.
+## Live Demo Preview
 
-**Visual Customization**
-Includes options to adjust the thickness, color, and radius of the mesh connections and landmarks.
+<p align="center">
+  <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" width="500" />
+</p>
 
-</div>
+The application opens a webcam window and overlays dynamic facial mesh points in real time.
 
-<div align="center">
+---
 
-## Technologies Used
+## System Architecture
 
-![Python](https://img.shields.io/badge/Python-FFD43B?style=flat&logo=python&logoColor=blue)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-00A99D?style=flat&logo=google&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+```
+Webcam Input
+      ↓
+OpenCV Frame Capture
+      ↓
+RGB Conversion
+      ↓
+MediaPipe FaceMesh Processing
+      ↓
+Landmark Detection (468 points)
+      ↓
+Overlay Rendering
+      ↓
+Display Output Window
+```
 
-</div>
+### Flow Explanation
 
-<div align="center">
+1. OpenCV captures frames from the webcam.
+2. Frames are converted from BGR to RGB.
+3. MediaPipe FaceMesh processes the image.
+4. Facial landmarks are extracted.
+5. Landmarks are drawn using OpenCV utilities.
+6. Processed frames are displayed in real time.
 
-## Installation
+---
 
-Follow these steps to set up the environment and run the application locally.
+## Installation Guide
 
-**1. Clone the Repository**
-```bash
-git clone [https://github.com/your-username/face-mesh-detection.git](https://github.com/your-username/face-mesh-detection.git)
+### 1. Clone Repository
+
+```
+git clone https://github.com/1sarthak7/your-repo-name.git
+cd your-repo-name
+```
+
+### 2. Create Virtual Environment (Recommended)
+
+```
+python3.11 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+Or manually:
+
+```
+pip install opencv-python==4.9.0.80 mediapipe==0.10.14 numpy==1.26.4 Pillow
+```
+
+---
+
+## Run the Application
+
+```
+python main.py
+```
+
+Press Q to exit the webcam window.
+
+---
+
+## Performance Notes (Apple Silicon Recommended Setup)
+
+For stable execution on M-series Macs:
+
+* Python 3.11
+* MediaPipe 0.10.14
+* OpenCV 4.9
+* NumPy 1.26
+
+Avoid Python 3.13+ for legacy MediaPipe API compatibility.
+
+---
+
+## Project Structure
+
+```
+hand-web/
+│
+├── main.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Use Cases
+
+* Face filter applications
+* AR-based overlays
+* Emotion recognition pipelines
+* Gesture-based interaction systems
+* Research and academic demonstrations
+
+---
+
+## Future Improvements
+
+* Real-time FPS display
+* Face bounding box visualization
+* Head pose estimation
+* Blink detection system
+* Facial expression classification
+* Web deployment using WebRTC
+
+---
+
+## Author
+
+<p align="center">
+  <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" width="180" />
+</p>
+
+**Sarthak Bhopale**
+Engineering Student | Computer Vision Enthusiast
+GitHub: [https://github.com/1sarthak7](https://github.com/1sarthak7)
+
+---
+
+## License
+
+This project is intended for educational and research purposes.
+
+---
+
+If you found this project useful, consider giving it a star on GitHub.
